@@ -16,7 +16,22 @@ Mezclar el lab de profile-app con la lección de proyectos y tareas para hacer u
 7. Abrir el proyecto en el IDE y limpiar ambas carpetas client/server para adecuarlas al proyecto
 8. Hacer `npm i` tanto en carpeta de server como en client antes de iniciar ambos servicios
 9. Iniciar mongoDB (en algunos casos) antes de iniciar el server
-10. 
+10. Picar modelos en el server y rutas mínimas de auth
+11. Comprobar que hay conexión con BBDD y entre back y front
+
+
+## APIs Info
+
+
+
+### APIs Info
+
+
+
+
+
+
+
 
 
 ## Endpoints
@@ -39,13 +54,6 @@ Mezclar el lab de profile-app con la lección de proyectos y tareas para hacer u
 | post   | /login            | Guarda la nueva sesión de usuario loggeado           |
 | get    | /logout           | Borra la sesión de usuario loggeado                  |
 | get    | /isloggedin       | Middleware que comprueba si hay usuario loggeado     |
-
-## APIs Info
-
-
-
-### APIs Info
-
 
 
 ## Comenzando 🚀
