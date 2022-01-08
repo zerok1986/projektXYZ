@@ -6,6 +6,17 @@ Mezclar el lab de profile-app con la lección de proyectos y tareas para hacer u
 
 ## Puntos principales 📦
 
+1. Decidir idea del proyecto y MVP a desarrollar
+2. Definir principales funcionalidades
+3. Crear Modelos (luego los pasaremos a código en el server)
+4. Crear Rutas del server
+5. Crear directorio raiz del proyecto
+6. Dentro de ese directorio, abrir Terminal y ejecutar `ironlauncher@latest app-name --auth --fs` para crear aplicación FS con create-react-app en el Frontend y NodeJS + ExpressJS en el Backend
+   1. (Check https://www.npmjs.com/package/ironlauncher para más info sobre opciones de Ironlauncher)
+7. Abrir el proyecto en el IDE y limpiar ambas carpetas client/server para adecuarlas al proyecto
+8. Hacer `npm i` tanto en carpeta de server como en client antes de iniciar ambos servicios
+9. Iniciar mongoDB (en algunos casos) antes de iniciar el server
+10. 
 
 
 ## Endpoints
