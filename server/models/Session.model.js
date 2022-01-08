@@ -16,5 +16,4 @@ const sessionSchema = new Schema(
 )
 
 const Session = model('Session', sessionSchema)
-
 module.exports = Session
