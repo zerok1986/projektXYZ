@@ -11,13 +11,20 @@ Mezclar el lab de profile-app con la lección de proyectos y tareas para hacer u
 3. Crear Modelos (luego los pasaremos a código en el server)
 4. Crear Rutas del server
 5. Crear directorio raiz del proyecto
-6. Dentro de ese directorio, abrir Terminal y ejecutar `ironlauncher@latest app-name --auth --fs` para crear aplicación FS con create-react-app en el Frontend y NodeJS + ExpressJS en el Backend
-   1. (Check https://www.npmjs.com/package/ironlauncher para más info sobre opciones de Ironlauncher)
+6. Dentro de ese directorio, abrir Terminal y ejecutar una de estas opciones:
+   1.  `ironlauncher@latest app-name --auth --fs` para crear aplicación FS con create-react-app en el Frontend y NodeJS + ExpressJS en el Backend con auth/login/signup básico
+   2.  `npx ironlauncher server --json` para crear Backend con NodeJS + ExpressJS y `npx create-react-app client` para el Frontend con React
+   3. (Visita https://www.npmjs.com/package/ironlauncher para más info sobre opciones de Ironlauncher)
 7. Abrir el proyecto en el IDE y limpiar ambas carpetas client/server para adecuarlas al proyecto
 8. Hacer `npm i` tanto en carpeta de server como en client antes de iniciar ambos servicios
-9. Iniciar mongoDB (en algunos casos) antes de iniciar el server
+9.  Iniciar mongoDB (en algunos casos) antes de iniciar el server
 10. Picar modelos en el server y rutas mínimas de auth
 11. Comprobar que hay conexión con BBDD y entre back y front
+12. Para iniciar entornos de desarrollo en ambos lados, divide en 2 tu Terminal y:
+    1.  Ejecuta `npm run dev` en una instancia de tu Terminal dentro de la carpeta server
+    2.  Ejecuta `npm start` en la otra instancia de la Terminal dentro de la carpeta client
+13. Si no hay ningún bug en las rutas o modelos, conexión back-front, etc, el paso anterior abrirá automáticamente tu app funcionando correctamente en http://localhost:3000/
+14. TODO: RUTAS adicionales back + Test Postman + SERVICIOS y Componentes en front
 
 
 ## APIs Info
