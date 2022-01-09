@@ -7,7 +7,8 @@ const app = express()
 require('./config')(app)
 
 // Routes
-require('./routes')(app)
+app.use('/api', require('./routes'))
+
 require('./error-handling')(app)
 
 module.exports = app

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import LoadingComponent from './components/Loading'
 import Navbar from './components/Navbar/Navbar'
-import { getLoggedIn, logout } from './services/auth'
+import { getLoggedIn, logout } from './services/auth.service'
 import routes from './config/routes'
 import * as USER_HELPERS from './utils/userToken'
 

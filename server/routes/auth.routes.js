@@ -7,10 +7,6 @@ const Session = require('../models/Session.model')
 const isLoggedOut = require('../middleware/isLoggedOut')
 const isLoggedIn = require('../middleware/isLoggedIn')
 
-router.get('/', (req, res) => {
-  res.json('All good in here')
-})
-
 router.get('/session', (req, res) => {
   if (!req.headers.authorization) {
     return res.json(null)

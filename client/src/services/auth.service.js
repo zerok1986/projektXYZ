@@ -34,7 +34,7 @@ export function login(credentials) {
 
 export function getLoggedIn() {
   return authService
-    .get(`session`, {
+    .get(`/session`, {
       headers: {
         Authorization: USER_HELPERS.getUserToken(),
       },
