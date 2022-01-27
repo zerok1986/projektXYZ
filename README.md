@@ -27,11 +27,83 @@ Mezclar el lab de profile-app con la lección de proyectos y tareas para hacer u
 14. TODO: RUTAS adicionales back + Test Postman + SERVICIOS y Componentes en front
 
 
-## APIs Info
+## Germán way to build a quick MERN stack app 🚀
+
+1. Crear la BBDD en MongoDB Compass
+2. Poblar la BBDD (seed, archivo JSON)
+3. Crear directorios client y server
+4. Crear el server con Express
+   1. npm init -y
+   2. npm i express
+5. server.js
+
+```
+const express = require('express')
+const app = express()
+
+// DB connection
+const mongoose = require('mongoose')
+mongoose
+  .connect('mongodb://')
+  .then(() => console.log('Conectado a BBDD'))
+
+// Model
+const Coaster = require('./models/coasters.model')
+
+// CORS
+const cors = require('cors')
+app.use(cors())
+
+// Routing
+app.get('/api', (req, res) => {
+  Coaster
+    .find()
+    .then(allCoasters => res.json(allCoasters))
+})
+
+app.get('/api/details/:id', (req, res) => {
+  const { id } = req.params
+
+  Coaster
+    .findById(id)
+    .then(coaster => res.json(coaster))
+})
+
+app.listen(5005, ()=> console.log('server listening')
+```
+6. Conexión a la BBDD
+   npm i mongoose
+7. Hacer modelos
+   1. Carpeta models
+   2. Archivo xxxxx.model.js
+   ```
+   const mongoose = require('mongoose')
+
+   const coasterSchema = mongoose.Schema({
+     title: String
+     ...
+   })
+
+   const Coaster = mongoose.model('coaster', coasterSchema)
+
+   module.exports = Coaster
+   ```
+8. Integrar las rutas en el server
+9. EMPEZAMOS PARTE DE CLIENT
+10. En carpeta client npx create-react-app .
+11. Crear y adaptar carpeta client
+12. Crear estructura de carpetas y componentes
+13. `npm i react-router-dom`
+14. Routes y Route
+15. Links de react-router-dom para evitar recargas de pagina
 
 
 
-### APIs Info
+
+### Util TIPS
+
+- CTRL + Shift + K : borra toda la linea
+- object-fit: cover !!!!
 
 
 
